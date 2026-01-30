@@ -1,0 +1,19 @@
+{
+    "name": "testing-strategy",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Testing strategy with test pyramid and coverage optimization",
+    "prompts": [
+        {
+            "trigger": "/testing-strategy-full",
+            "description": "深度审查",
+            "template": "提供单元测试、集成测试、E2E测试方法和测试覆盖率策略: 请进行完整的深度审查,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/testing-strategy-quick",
+            "description": "快速验证",
+            "template": "提供单元测试、集成测试、E2E测试方法和测试覆盖率策略: 快速快速验证,重点关注关键要素。"
+        }
+    ]
+}

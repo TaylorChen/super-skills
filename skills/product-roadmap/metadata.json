@@ -1,0 +1,19 @@
+{
+    "name": "product-roadmap",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Product roadmap planning with milestone and version management",
+    "prompts": [
+        {
+            "trigger": "/product-roadmap-full",
+            "description": "完整分析",
+            "template": "提供路线图规划方法、里程碑设定策略和优先级排序框架: 请进行完整的完整分析,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/product-roadmap-quick",
+            "description": "快速检查",
+            "template": "提供路线图规划方法、里程碑设定策略和优先级排序框架: 快速快速检查,重点关注关键要素。"
+        }
+    ]
+}

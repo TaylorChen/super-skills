@@ -1,0 +1,19 @@
+{
+    "name": "documentation",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Technical documentation with API docs and architecture guides",
+    "prompts": [
+        {
+            "trigger": "/documentation-full",
+            "description": "完整创作",
+            "template": "提供技术文档结构模板、API文档规范、用户手册编写方法和架构文档最佳实践: 请进行完整的完整创作,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/documentation-quick",
+            "description": "快速优化",
+            "template": "提供技术文档结构模板、API文档规范、用户手册编写方法和架构文档最佳实践: 快速快速优化,重点关注关键要素。"
+        }
+    ]
+}

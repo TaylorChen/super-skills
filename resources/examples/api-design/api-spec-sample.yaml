@@ -1,0 +1,107 @@
+openapi: 3.0.3
+info:
+  title: 智能支付系统 (SmartPay) - 用户 API
+  description: 指南：演示如何设计一个安全、幂等且语义清晰的支付网关 API。
+  version: 1.0.0
+  contact:
+    name: 架构组
+    email: arch@smartpay.example.com
+
+servers:
+  - url: https://api.smartpay.example.com/v1
+    description: 生产环境
+
+paths:
+  /payments:
+    post:
+      summary: 发起单笔支付
+      description: 使用该接口创建支付单。该接口具备严格的幂等性保证。
+      operationId: createPayment
+      parameters:
+        - name: Idempotency-Key
+          in: header
+          required: true
+          schema:
+            type: string
+          description: 幂等性密钥,建议使用 UUID。
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PaymentRequest'
+      responses:
+        '201':
+          description: 支付单创建成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PaymentResponse'
+        '400':
+          $ref: '#/components/responses/BadRequest'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+        '422':
+          description: 业务验证失败 (如余额不足、卡号无效)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorDetail'
+
+components:
+  schemas:
+    PaymentRequest:
+      type: object
+      required:
+        - amount
+        - currency
+        - source_token
+      properties:
+        amount:
+          type: integer
+          description: 金额 (单位：分)
+          example: 1000
+        currency:
+          type: string
+          enum: [CNY, USD, EUR]
+          default: CNY
+        source_token:
+          type: string
+          description: 支付来源标识 (从客户端 SDK 获取)
+        metadata:
+          type: object
+          description: 任意 KV 元数据,用于后续审计。
+
+    PaymentResponse:
+      type: object
+      properties:
+        payment_id:
+          type: string
+          example: "pay_9a2f1b..."
+        status:
+          type: string
+          enum: [succeeded, pending, failed]
+        created_at:
+          type: string
+          format: date-time
+        request_id:
+          type: string
+          example: "req_xyz789"
+
+    ErrorDetail:
+      type: object
+      properties:
+        code:
+          type: string
+          example: "INSUFFICIENT_FUNDS"
+        message:
+          type: string
+          example: "账户余额不足"
+        request_id:
+          type: string
+
+  responses:
+    BadRequest:
+      description: 参数格式错误
+    Unauthorized:
+      description: 认证失败

@@ -1,0 +1,19 @@
+{
+    "name": "product-requirements",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Product requirements documentation with SMART principles and acceptance criteria",
+    "prompts": [
+        {
+            "trigger": "/product-requirements-full",
+            "description": "完整分析",
+            "template": "提供PRD模板、用户研究方法、需求分析框架和验收标准定义: 请进行完整的完整分析,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/product-requirements-quick",
+            "description": "快速检查",
+            "template": "提供PRD模板、用户研究方法、需求分析框架和验收标准定义: 快速快速检查,重点关注关键要素。"
+        }
+    ]
+}

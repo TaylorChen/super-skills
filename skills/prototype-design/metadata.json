@@ -1,0 +1,19 @@
+{
+    "name": "prototype-design",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Prototype design with wireframes and interaction flows",
+    "prompts": [
+        {
+            "trigger": "/prototype-design-full",
+            "description": "完整分析",
+            "template": "提供原型设计原则、线框图绘制方法和交互设计模式: 请进行完整的完整分析,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/prototype-design-quick",
+            "description": "快速检查",
+            "template": "提供原型设计原则、线框图绘制方法和交互设计模式: 快速快速检查,重点关注关键要素。"
+        }
+    ]
+}

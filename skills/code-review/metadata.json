@@ -1,0 +1,24 @@
+{
+    "name": "code-review",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "upgraded",
+    "abstract": "Procedural code review rules with high-impact security and maintainability patterns.",
+    "prompts": [
+        {
+            "trigger": "/code-review-full",
+            "description": "Full PR Audit",
+            "template": "代码全量评审: 请对以下 PR 进行深度审计,参考 review-sample.md,识别所有安全隐患、性能瓶颈及代码异味: [粘贴代码]"
+        },
+        {
+            "trigger": "/code-review-security",
+            "description": "Security Check",
+            "template": "安全专项检查: 重点检查以下代码块是否存在 SQL 注入、跨站脚本(XSS)或敏感数据泄露风险。"
+        },
+        {
+            "trigger": "/code-review-clean",
+            "description": "Clean Code Check",
+            "template": "风格与简洁性: 检查这段逻辑是否符合 Clean Code 规范,是否通过重构模式可以变得更简洁。"
+        }
+    ]
+}

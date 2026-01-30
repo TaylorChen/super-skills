@@ -1,0 +1,19 @@
+{
+    "name": "performance-tuning",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Performance tuning for frontend and backend optimization",
+    "prompts": [
+        {
+            "trigger": "/performance-tuning-full",
+            "description": "完整配置",
+            "template": "提供性能分析方法、前端性能优化、后端性能优化和数据库调优策略: 请进行完整的完整配置,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/performance-tuning-quick",
+            "description": "快速诊断",
+            "template": "提供性能分析方法、前端性能优化、后端性能优化和数据库调优策略: 快速快速诊断,重点关注关键要素。"
+        }
+    ]
+}

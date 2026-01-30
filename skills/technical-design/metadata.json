@@ -1,0 +1,24 @@
+{
+    "name": "technical-design",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "upgraded",
+    "abstract": "Architectural rules focusing on resilience, high availability, and horizontal scalability.",
+    "prompts": [
+        {
+            "trigger": "/technical-design-draft",
+            "description": "Draft Arch",
+            "template": "架构方案起草: 我需要为[业务需求]设计一套高可用的系统架构,请参考 architecture-sample.md,提供组件选型、核心拓扑及异常容灾方案。"
+        },
+        {
+            "trigger": "/technical-design-compare",
+            "description": "Middleware Select",
+            "template": "中间件选型: 针对[高并发/大数据/实时性]场景,请对比[方案A]和[方案B],从吞吐量、一致性和维护成本维度给出深度建议。"
+        },
+        {
+            "trigger": "/technical-design-audit",
+            "description": "Arch Review",
+            "template": "架构评审: 请作为资深架构师,针对以下方案进行风险评估,识别潜在的单点故障和性能瓶颈: [粘贴方案]"
+        }
+    ]
+}

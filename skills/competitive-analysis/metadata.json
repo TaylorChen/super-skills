@@ -1,0 +1,19 @@
+{
+    "name": "competitive-analysis",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Competitive analysis framework with SWOT and market positioning",
+    "prompts": [
+        {
+            "trigger": "/competitive-analysis-full",
+            "description": "完整分析",
+            "template": "提供竞品分析框架、SWOT分析方法、功能对比矩阵和市场定位策略: 请进行完整的完整分析,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/competitive-analysis-quick",
+            "description": "快速检查",
+            "template": "提供竞品分析框架、SWOT分析方法、功能对比矩阵和市场定位策略: 快速快速检查,重点关注关键要素。"
+        }
+    ]
+}

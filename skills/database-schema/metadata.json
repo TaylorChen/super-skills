@@ -1,0 +1,24 @@
+{
+    "name": "database-schema",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "upgraded",
+    "abstract": "Database modeling rules focusing on query performance, indexing, and scalability.",
+    "prompts": [
+        {
+            "trigger": "/database-schema-er",
+            "description": "Initial Modeling",
+            "template": "初始建模: 我正在开发一个[系统类型],请为我设计核心实体关系(ER),并提供遵循 3NF 规范的 DDL 脚本。"
+        },
+        {
+            "trigger": "/database-schema-slow",
+            "description": "Slow Query Analysis",
+            "template": "性能诊断: 这是一个执行缓慢的 SQL 查询,请结合你的索引优化指南,分析 EXPLAIN 指南并给出优化建议: [粘贴 SQL]"
+        },
+        {
+            "trigger": "/database-schema-scale",
+            "description": "Sharding Plan",
+            "template": "扩展性规划: 随着数据量突破[千万/亿]级,请为我的[表名]提供最适合的分库分表策略或数据归档方案。"
+        }
+    ]
+}

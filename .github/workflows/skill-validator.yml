@@ -1,0 +1,25 @@
+name: Skill Validator
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+      - name: Run Token Optimizer & Stats
+        run: python3 scripts/token-optimizer.py
+      - name: Lint Rules (v5.0 Quality Gate)
+        run: python3 scripts/lint-rules.py
+      - name: Build & Audit Rules (Token Budget)
+        run: python3 scripts/build-rules.py
+      - name: Validate Example PRD
+        run: python3 scripts/prd-checker.py resources/examples/product-requirements/prd-sample.md

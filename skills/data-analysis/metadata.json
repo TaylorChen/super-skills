@@ -1,0 +1,19 @@
+{
+    "name": "data-analysis",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Data analysis with visualization and statistical methods",
+    "prompts": [
+        {
+            "trigger": "/data-analysis-full",
+            "description": "完整配置",
+            "template": "提供数据分析方法、数据可视化技巧、统计分析方法和报表生成模板: 请进行完整的完整配置,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/data-analysis-quick",
+            "description": "快速诊断",
+            "template": "提供数据分析方法、数据可视化技巧、统计分析方法和报表生成模板: 快速快速诊断,重点关注关键要素。"
+        }
+    ]
+}

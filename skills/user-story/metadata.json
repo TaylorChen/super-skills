@@ -1,0 +1,24 @@
+{
+    "name": "user-story",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "upgraded",
+    "abstract": "Agile user story rules focusing on the INVEST principle and clear acceptance criteria.",
+    "prompts": [
+        {
+            "trigger": "/user-story-split",
+            "description": "Split Stories",
+            "template": "拆解用户故事: 请将[需求大项]拆解为 5-8 个符合 INVEST 原则的用户故事,并参考 user-story-sample.md 的格式编写。"
+        },
+        {
+            "trigger": "/user-story-rank",
+            "description": "Prioritize",
+            "template": "估算与排序: 请根据 RICE 模型或故事点,对以下用户故事进行优先级排序和复杂度分析: [粘贴故事列表]"
+        },
+        {
+            "trigger": "/user-story-ac",
+            "description": "Define AC",
+            "template": "定义验收标准: 为这个用户故事编写详细的 AC,确保涵盖正常路径和所有异常分支。"
+        }
+    ]
+}

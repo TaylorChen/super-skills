@@ -1,0 +1,32 @@
+{
+  "name": "super-skills",
+  "version": "1.0.0",
+  "description": "高质量的 Agent Skills 集合,覆盖产品、研发、运维、数据等领域",
+  "keywords": [
+    "agent-skills",
+    "ai",
+    "claude-code",
+    "cursor",
+    "copilot",
+    "skills",
+    "product",
+    "development",
+    "devops"
+  ],
+  "author": "Taylor Chen",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taylorchen/super-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/taylorchen/super-skills/issues"
+  },
+  "homepage": "https://github.com/taylorchen/super-skills#readme",
+  "scripts": {
+    "select": "python3 scripts/skill-selector.py",
+    "validate": "python3 scripts/lint-rules.py",
+    "stats": "python3 scripts/token-optimizer.py",
+    "build-agents": "python3 scripts/build-rules.py"
+  }
+}

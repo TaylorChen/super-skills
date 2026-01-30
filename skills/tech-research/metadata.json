@@ -1,0 +1,19 @@
+{
+    "name": "tech-research",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Technical research methodology with POC validation",
+    "prompts": [
+        {
+            "trigger": "/tech-research-full",
+            "description": "深度审查",
+            "template": "提供技术调研方法论、技术选型框架、POC验证指南和调研报告模板: 请进行完整的深度审查,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/tech-research-quick",
+            "description": "快速验证",
+            "template": "提供技术调研方法论、技术选型框架、POC验证指南和调研报告模板: 快速快速验证,重点关注关键要素。"
+        }
+    ]
+}

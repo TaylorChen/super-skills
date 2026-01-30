@@ -1,0 +1,24 @@
+{
+    "name": "api-design",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "upgraded",
+    "abstract": "Architectural grade API design rules focused on RESTful best practices, security, and performance.",
+    "prompts": [
+        {
+            "trigger": "/api-design-new",
+            "description": "Design a new API from scratch",
+            "template": "设计新 API: 接下来我需要为一个[业务场景]设计一套[RESTful/GraphQL]接口,请基于你的规范提供详细的路径、方法和 Schema 定义。"
+        },
+        {
+            "trigger": "/api-design-review",
+            "description": "Review existing API definition",
+            "template": "评审现有接口: 请检查以下 API 定义是否符合最佳实践,重点关注命名规范、错误处理和安全性: [粘贴代码/链接]"
+        },
+        {
+            "trigger": "/api-design-version",
+            "description": "Plan API versioning strategy",
+            "template": "版本规划: 我们需要为现有的 API 引入版本控制,请根据文档建议提供最适合我们当前架构的升级方案。"
+        }
+    ]
+}

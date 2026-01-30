@@ -1,0 +1,19 @@
+{
+    "name": "refactoring-guide",
+    "organization": "super-skills",
+    "version": "5.0.0",
+    "status": "stable",
+    "abstract": "Code refactoring guide with design patterns and technical debt management",
+    "prompts": [
+        {
+            "trigger": "/refactoring-guide-full",
+            "description": "深度审查",
+            "template": "提供重构模式、代码坏味道识别和重构策略: 请进行完整的深度审查,参考相关示例和最佳实践。"
+        },
+        {
+            "trigger": "/refactoring-guide-quick",
+            "description": "快速验证",
+            "template": "提供重构模式、代码坏味道识别和重构策略: 快速快速验证,重点关注关键要素。"
+        }
+    ]
+}
