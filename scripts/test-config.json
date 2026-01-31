@@ -1,0 +1,32 @@
+{
+  "test_options": {
+    "check_structure": true,
+    "check_metadata": true,
+    "check_skill_md": true,
+    "check_references": true,
+    "check_token_count": true
+  },
+  "validation_rules": {
+    "skill_md": {
+      "min_length": 100,
+      "max_length": 5000
+    },
+    "guide_md": {
+      "min_length": 100,
+      "max_length": 10000
+    },
+    "metadata": {
+      "required_fields": [
+        "name", "organization", "version", "status",
+        "category", "difficulty", "estimated_time",
+        "abstract", "prompts"
+      ]
+    }
+  },
+  "output_formats": [
+    "console",
+    "json",
+    "markdown"
+  ],
+  "default_output": "console"
+}

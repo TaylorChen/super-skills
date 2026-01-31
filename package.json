@@ -26,7 +26,16 @@
   "scripts": {
     "select": "python3 scripts/skill-selector.py",
     "validate": "python3 scripts/lint-rules.py",
+    "skill-validate": "python3 scripts/validate-skill.py --all",
+    "test": "python3 scripts/test-skill.py all",
+    "test:skill": "python3 scripts/test-skill.py",
+    "prompts": "python3 scripts/smart-prompts.py",
+    "prompts:list": "python3 scripts/smart-prompts.py --list",
+    "analytics": "python3 scripts/analytics.py",
+    "analytics:record": "python3 scripts/analytics.py --record",
+    "analytics:export": "python3 scripts/analytics.py --export",
     "stats": "python3 scripts/token-optimizer.py",
-    "build-agents": "python3 scripts/build-rules.py"
+    "build-agents": "python3 scripts/build-rules.py",
+    "create-skill": "python3 scripts/create-skill.py"
   }
 }

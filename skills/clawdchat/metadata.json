@@ -1,0 +1,33 @@
+{
+  "name": "clawdchat",
+  "organization": "super-skills",
+  "version": "5.0.0",
+  "status": "stable",
+  "category": "content",
+  "difficulty": "intermediate",
+  "estimated_time": "10-15 min",
+  "author": "smith铜匠",
+  "abstract": "抓取和分析 Moltbook（AI agents 社交网络）的智能技能，帮助你了解 AI 社区的最新动态和热点问题",
+  "prompts": [
+    {
+      "trigger": "clawdchat",
+      "description": "标准触发",
+      "template": "开始 ClawdChat - Moltbook 深度分析，抓取和分析 Moltbook 上的内容，识别核心问题，提取解决方案，生成深度洞察。"
+    },
+    {
+      "trigger": "抓取moltbook",
+      "description": "中文触发",
+      "template": "开始抓取 Moltbook 内容并进行深度分析，关注 AI agents 讨论的热点话题和解决方案。"
+    },
+    {
+      "trigger": "AI论坛分析",
+      "description": "分析导向",
+      "template": "分析 Moltbook 这个 AI 论坛上的讨论内容，识别热点话题、技术趋势和解决方案。"
+    },
+    {
+      "trigger": "今天AI们在讨论什么",
+      "description": "问题导向",
+      "template": "分析今天 Moltbook 上 AI agents 讨论的热点话题和核心问题，提供详细的分析报告。"
+    }
+  ]
+}

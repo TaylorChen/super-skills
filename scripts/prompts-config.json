@@ -1,0 +1,23 @@
+{
+  "recommendation": {
+    "threshold": 70,
+    "max_results": 5,
+    "show_score": true
+  },
+  "prompt_generation": {
+    "include_examples": true,
+    "include_usage_tips": true,
+    "include_category_info": true
+  },
+  "categories": {
+    "product": "产品类技能",
+    "development": "研发类技能",
+    "content": "内容类技能",
+    "devops": "运维/数据类技能"
+  },
+  "difficulty_levels": {
+    "beginner": "初级 - 适合新手",
+    "intermediate": "中级 - 需要一定经验",
+    "advanced": "高级 - 需要丰富经验"
+  }
+}

@@ -1,0 +1,399 @@
+{
+  "name": "super-skills",
+  "displayName": "Super Skills",
+  "description": "高质量的 Agent Skills 集合，覆盖产品、研发、运维、数据等领域，提供标准化的 AI 能力封装",
+  "version": "1.2.0",
+  "author": "Taylor Chen",
+  "license": "MIT",
+  "repository": "https://github.com/taylorchen/super-skills",
+  "homepage": "https://github.com/taylorchen/super-skills#readme",
+  "keywords": [
+    "agent-skills",
+    "ai",
+    "claude-code",
+    "cursor",
+    "copilot",
+    "product",
+    "development",
+    "devops",
+    "code-review",
+    "api-design",
+    "prd",
+    "architecture",
+    "database",
+    "seo",
+    "content",
+    "testing"
+  ],
+  "features": [
+    "标准化触发指令 (Golden Prompts)",
+    "多技能协同工作流 (Workflows)",
+    "可视化深度增强 (Mermaid Integration)",
+    "全量资源样本 (Resources)",
+    "自动化脚本 (Scripts)",
+    "全球化支持 (i18n)",
+    "参数化配置支持",
+    "插件市场集成"
+  ],
+  "supportedTools": [
+    "Claude Code",
+    "Cursor",
+    "Antigravity",
+    "GitHub Copilot",
+    "Codex",
+    "Roo Code"
+  ],
+  "installation": {
+    "cli": "npx skills add https://github.com/taylorchen/super-skills",
+    "marketplace": "/plugin marketplace add taylorchen/super-skills",
+    "manual": "复制技能目录到 AI 工具的 skills 文件夹"
+  },
+  "update": {
+    "method": "git pull",
+    "autoUpdate": false,
+    "checkInterval": "weekly"
+  },
+  "support": {
+    "issues": "https://github.com/taylorchen/super-skills/issues",
+    "discussions": "https://github.com/taylorchen/super-skills/discussions",
+    "documentation": "https://github.com/taylorchen/super-skills#readme"
+  },
+  "contribution": {
+    "guidelines": "https://github.com/taylorchen/super-skills/blob/main/CONTRIBUTING.md",
+    "pullRequests": "https://github.com/taylorchen/super-skills/pulls",
+    "codeOfConduct": "https://github.com/taylorchen/super-skills/blob/main/CODE_OF_CONDUCT.md"
+  },
+  "categories": [
+    {
+      "name": "product",
+      "displayName": "🎯 产品类",
+      "description": "产品规划、需求分析、竞品分析等技能",
+      "skills": [
+        "product-requirements",
+        "competitive-analysis",
+        "user-story",
+        "prototype-design",
+        "product-roadmap"
+      ]
+    },
+    {
+      "name": "development",
+      "displayName": "💻 研发类",
+      "description": "架构设计、API 开发、数据库设计、代码审查等技能",
+      "skills": [
+        "technical-design",
+        "api-design",
+        "database-schema",
+        "code-review",
+        "refactoring-guide",
+        "testing-strategy",
+        "tech-research"
+      ]
+    },
+    {
+      "name": "content",
+      "displayName": "✍️ 内容类",
+      "description": "技术写作、SEO 优化、文档编写等技能",
+      "skills": [
+        "blog-writer",
+        "seo-optimization",
+        "geo-optimization",
+        "documentation",
+        "clawdchat"
+      ]
+    },
+    {
+      "name": "devops",
+      "displayName": "🔧 运维/数据",
+      "description": "部署、监控、数据分析、性能优化等技能",
+      "skills": [
+        "deployment-guide",
+        "monitoring-setup",
+        "data-analysis",
+        "performance-tuning"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "product-requirements",
+      "displayName": "PRD 撰写",
+      "description": "产品需求文档撰写，包含 SMART 原则和验收标准定义",
+      "category": "product",
+      "difficulty": "intermediate",
+      "estimatedTime": "10-15 min",
+      "triggers": [
+        "/product-requirements-full",
+        "/product-requirements-quick"
+      ]
+    },
+    {
+      "name": "competitive-analysis",
+      "displayName": "竞品分析",
+      "description": "SWOT 分析和竞品对比，帮助了解市场定位",
+      "category": "product",
+      "difficulty": "intermediate",
+      "estimatedTime": "15-20 min",
+      "triggers": [
+        "/competitive-analysis-full",
+        "/competitive-analysis-quick"
+      ]
+    },
+    {
+      "name": "user-story",
+      "displayName": "用户故事",
+      "description": "敏捷开发中的用户故事编写，遵循 INVEST 原则",
+      "category": "product",
+      "difficulty": "beginner",
+      "estimatedTime": "5-10 min",
+      "triggers": [
+        "/user-story-full",
+        "/user-story-quick"
+      ]
+    },
+    {
+      "name": "prototype-design",
+      "displayName": "原型设计",
+      "description": "交互流程设计和原型制作指南",
+      "category": "product",
+      "difficulty": "intermediate",
+      "estimatedTime": "20-30 min",
+      "triggers": [
+        "/prototype-design-full",
+        "/prototype-design-quick"
+      ]
+    },
+    {
+      "name": "product-roadmap",
+      "displayName": "路线图规划",
+      "description": "产品版本规划和里程碑管理",
+      "category": "product",
+      "difficulty": "advanced",
+      "estimatedTime": "15-20 min",
+      "triggers": [
+        "/product-roadmap-full",
+        "/product-roadmap-quick"
+      ]
+    },
+    {
+      "name": "technical-design",
+      "displayName": "架构设计",
+      "description": "技术方案设计，包含架构图和技术选型",
+      "category": "development",
+      "difficulty": "advanced",
+      "estimatedTime": "30-45 min",
+      "triggers": [
+        "/technical-design-full",
+        "/technical-design-quick"
+      ]
+    },
+    {
+      "name": "api-design",
+      "displayName": "API 设计",
+      "description": "RESTful/GraphQL/gRPC API 规范设计",
+      "category": "development",
+      "difficulty": "intermediate",
+      "estimatedTime": "15-20 min",
+      "triggers": [
+        "/api-design-full",
+        "/api-design-quick"
+      ]
+    },
+    {
+      "name": "database-schema",
+      "displayName": "数据库设计",
+      "description": "数据库建模、索引优化和性能调优",
+      "category": "development",
+      "difficulty": "intermediate",
+      "estimatedTime": "20-30 min",
+      "triggers": [
+        "/database-schema-full",
+        "/database-schema-quick"
+      ]
+    },
+    {
+      "name": "code-review",
+      "displayName": "代码审查",
+      "description": "代码质量审查，涵盖安全性、性能和可维护性",
+      "category": "development",
+      "difficulty": "intermediate",
+      "estimatedTime": "10-15 min",
+      "triggers": [
+        "/code-review-full",
+        "/code-review-quick",
+        "/code-review-security"
+      ]
+    },
+    {
+      "name": "refactoring-guide",
+      "displayName": "重构指南",
+      "description": "代码重构最佳实践和模式应用",
+      "category": "development",
+      "difficulty": "advanced",
+      "estimatedTime": "20-30 min",
+      "triggers": [
+        "/refactoring-guide-full",
+        "/refactoring-guide-quick"
+      ]
+    },
+    {
+      "name": "testing-strategy",
+      "displayName": "测试策略",
+      "description": "测试金字塔和测试用例设计",
+      "category": "development",
+      "difficulty": "intermediate",
+      "estimatedTime": "15-20 min",
+      "triggers": [
+        "/testing-strategy-full",
+        "/testing-strategy-quick"
+      ]
+    },
+    {
+      "name": "tech-research",
+      "displayName": "技术调研",
+      "description": "技术选型和 POC 验证",
+      "category": "development",
+      "difficulty": "advanced",
+      "estimatedTime": "30-60 min",
+      "triggers": [
+        "/tech-research-full",
+        "/tech-research-quick"
+      ]
+    },
+    {
+      "name": "blog-writer",
+      "displayName": "技术博客",
+      "description": "技术博客写作指南和内容结构",
+      "category": "content",
+      "difficulty": "beginner",
+      "estimatedTime": "20-30 min",
+      "triggers": [
+        "/blog-writer-full",
+        "/blog-writer-quick"
+      ]
+    },
+    {
+      "name": "seo-optimization",
+      "displayName": "SEO 优化",
+      "description": "搜索引擎优化和内容策略",
+      "category": "content",
+      "difficulty": "intermediate",
+      "estimatedTime": "15-20 min",
+      "triggers": [
+        "/seo-optimization-full",
+        "/seo-optimization-quick"
+      ]
+    },
+    {
+      "name": "geo-optimization",
+      "displayName": "GEO 优化",
+      "description": "本地化优化和多语言支持",
+      "category": "content",
+      "difficulty": "intermediate",
+      "estimatedTime": "15-20 min",
+      "triggers": [
+        "/geo-optimization-full",
+        "/geo-optimization-quick"
+      ]
+    },
+    {
+      "name": "documentation",
+      "displayName": "技术文档",
+      "description": "API 文档和技术文档编写",
+      "category": "content",
+      "difficulty": "intermediate",
+      "estimatedTime": "20-30 min",
+      "triggers": [
+        "/documentation-full",
+        "/documentation-quick"
+      ]
+    },
+    {
+      "name": "clawdchat",
+      "displayName": "ClawdChat - Moltbook 分析",
+      "description": "抓取和分析 Moltbook（AI agents 社交网络）的智能技能",
+      "category": "content",
+      "difficulty": "intermediate",
+      "estimatedTime": "10-15 min",
+      "triggers": [
+        "clawdchat",
+        "抓取moltbook",
+        "AI论坛分析",
+        "今天AI们在讨论什么"
+      ]
+    },
+    {
+      "name": "deployment-guide",
+      "displayName": "部署指南",
+      "description": "CI/CD 流程和部署最佳实践",
+      "category": "devops",
+      "difficulty": "intermediate",
+      "estimatedTime": "20-30 min",
+      "triggers": [
+        "/deployment-guide-full",
+        "/deployment-guide-quick"
+      ]
+    },
+    {
+      "name": "monitoring-setup",
+      "displayName": "监控配置",
+      "description": "系统监控、告警设置和日志分析",
+      "category": "devops",
+      "difficulty": "intermediate",
+      "estimatedTime": "20-30 min",
+      "triggers": [
+        "/monitoring-setup-full",
+        "/monitoring-setup-quick"
+      ]
+    },
+    {
+      "name": "data-analysis",
+      "displayName": "数据分析",
+      "description": "数据可视化和分析方法",
+      "category": "devops",
+      "difficulty": "intermediate",
+      "estimatedTime": "20-30 min",
+      "triggers": [
+        "/data-analysis-full",
+        "/data-analysis-quick"
+      ]
+    },
+    {
+      "name": "performance-tuning",
+      "displayName": "性能调优",
+      "description": "系统性能优化和瓶颈分析",
+      "category": "devops",
+      "difficulty": "advanced",
+      "estimatedTime": "30-45 min",
+      "triggers": [
+        "/performance-tuning-full",
+        "/performance-tuning-quick"
+      ]
+    }
+  ],
+  "features": [
+    "标准化触发指令 (Golden Prompts)",
+    "多技能协同工作流 (Workflows)",
+    "可视化深度增强 (Mermaid Integration)",
+    "全量资源样本 (Resources)",
+    "自动化脚本 (Scripts)",
+    "全球化支持 (i18n)"
+  ],
+  "supportedTools": [
+    "Claude Code",
+    "Cursor",
+    "Antigravity",
+    "GitHub Copilot",
+    "Codex",
+    "Roo Code"
+  ],
+  "installation": {
+    "cli": "npx skills add https://github.com/taylorchen/super-skills",
+    "marketplace": "/plugin marketplace add taylorchen/super-skills",
+    "manual": "复制技能目录到 AI 工具的 skills 文件夹"
+  },
+  "update": {
+    "method": "git pull",
+    "autoUpdate": false
+  }
+}

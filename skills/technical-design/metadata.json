@@ -3,22 +3,76 @@
     "organization": "super-skills",
     "version": "5.0.0",
     "status": "upgraded",
+    "category": "development",
+    "difficulty": "advanced",
+    "estimated_time": "30-45 min",
     "abstract": "Architectural rules focusing on resilience, high availability, and horizontal scalability.",
     "prompts": [
         {
             "trigger": "/technical-design-draft",
             "description": "Draft Arch",
-            "template": "架构方案起草: 我需要为[业务需求]设计一套高可用的系统架构,请参考 architecture-sample.md,提供组件选型、核心拓扑及异常容灾方案。"
+            "template": "架构方案起草: 我需要为[业务需求]设计一套高可用的系统架构,请参考 architecture-sample.md,提供组件选型、核心拓扑及异常容灾方案。",
+            "parameters": {
+                "architecture": {
+                    "description": "架构类型",
+                    "options": ["microservices", "monolith", "serverless", "event-driven", "service-oriented"],
+                    "default": "microservices"
+                },
+                "scale": {
+                    "description": "系统规模",
+                    "options": ["small", "medium", "large", "enterprise"],
+                    "default": "medium"
+                },
+                "tech-stack": {
+                    "description": "技术栈",
+                    "options": ["java", "go", "python", "nodejs", "dotnet"],
+                    "default": "java"
+                },
+                "lang": {
+                    "description": "输出语言",
+                    "options": ["zh", "en"],
+                    "default": "zh"
+                }
+            }
         },
         {
             "trigger": "/technical-design-compare",
             "description": "Middleware Select",
-            "template": "中间件选型: 针对[高并发/大数据/实时性]场景,请对比[方案A]和[方案B],从吞吐量、一致性和维护成本维度给出深度建议。"
+            "template": "中间件选型: 针对[高并发/大数据/实时性]场景,请对比[方案A]和[方案B],从吞吐量、一致性和维护成本维度给出深度建议。",
+            "parameters": {
+                "scenario": {
+                    "description": "应用场景",
+                    "options": ["high-concurrency", "big-data", "realtime", "iot", "ecommerce"],
+                    "default": "high-concurrency"
+                },
+                "focus": {
+                    "description": "关注重点",
+                    "options": ["performance", "consistency", "scalability", "maintainability", "cost"],
+                    "default": "performance"
+                },
+                "lang": {
+                    "description": "输出语言",
+                    "options": ["zh", "en"],
+                    "default": "zh"
+                }
+            }
         },
         {
             "trigger": "/technical-design-audit",
             "description": "Arch Review",
-            "template": "架构评审: 请作为资深架构师,针对以下方案进行风险评估,识别潜在的单点故障和性能瓶颈: [粘贴方案]"
+            "template": "架构评审: 请作为资深架构师,针对以下方案进行风险评估,识别潜在的单点故障和性能瓶颈: [粘贴方案]",
+            "parameters": {
+                "focus": {
+                    "description": "关注重点",
+                    "options": ["reliability", "performance", "security", "scalability", "maintainability"],
+                    "default": "reliability"
+                },
+                "lang": {
+                    "description": "输出语言",
+                    "options": ["zh", "en"],
+                    "default": "zh"
+                }
+            }
         }
     ]
 }

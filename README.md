@@ -33,12 +33,15 @@ graph TD
 
 ## 🚀 巅峰特性
 
-- ⚡ **标准化触发指令 (Golden Prompts)**: 每个技能内置精心调优的 Prompt 模板,实现“一键唤醒”最强战力。
+- ⚡ **标准化触发指令 (Golden Prompts)**: 每个技能内置精心调优的 Prompt 模板,实现"一键唤醒"最强战力。
 - 🔄 **多技能协同工作流 (Workflows)**: 定义了 3 套典型业务流场景(功能开发、架构评审、内容营销),引导 AI 进行跨技能连续作业。
 - 📊 **可视化深度增强 (Mermaid Integration)**: 核心指南全面植入 Mermaid 流程图与架构图,大幅提升 AI 的逻辑推演准确度。
-- 🌟 **全量资源样本 (Resources)**: 提供 PRD、API 定义、架构方案等 6 个核心领域的“黄金标准”样例文件。
+- 🌟 **全量资源样本 (Resources)**: 提供 PRD、API 定义、架构方案等 6 个核心领域的"黄金标准"样例文件。
 - 🛠️ **自动化脚本 (Scripts)**: 内置 `prd-checker` (需求校验)和 `token-optimizer` (效能统计)工具。
 - 🌐 **全球化支持 (i18n)**: 核心技能提供中英双语指南,适配国际化协作环境。
+- 🎨 **增强文档结构**: 每个技能包含快速开始、FAQ、最佳实践和可视化流程图。
+- 🚀 **技能生成器**: 使用 `create-skill` 脚本快速创建新技能。
+- 📜 **版本变更日志**: 详细的 CHANGELOG.md 记录所有版本变更。
 
 ## 快速开始
 
@@ -52,6 +55,36 @@ graph TD
 
 ```bash
 python3 scripts/skill-selector.py
+```
+
+### 🛠️ 技能生成器
+
+想要贡献新技能?使用技能生成器:
+
+```bash
+npm run create-skill
+# 或
+python3 scripts/create-skill.py
+```
+
+### 📊 Token 统计
+
+查看技能的 token 消耗:
+
+```bash
+npm run stats
+# 或
+python3 scripts/token-optimizer.py
+```
+
+### ✅ 质量验证
+
+验证技能质量和格式:
+
+```bash
+npm run validate
+# 或
+python3 scripts/lint-rules.py
 ```
 
 ### 使用 skills CLI 安装

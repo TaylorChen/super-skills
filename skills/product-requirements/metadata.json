@@ -3,17 +3,54 @@
     "organization": "super-skills",
     "version": "5.0.0",
     "status": "stable",
+    "category": "product",
+    "difficulty": "intermediate",
+    "estimated_time": "10-15 min",
     "abstract": "Product requirements documentation with SMART principles and acceptance criteria",
     "prompts": [
         {
             "trigger": "/product-requirements-full",
             "description": "完整分析",
-            "template": "提供PRD模板、用户研究方法、需求分析框架和验收标准定义: 请进行完整的完整分析,参考相关示例和最佳实践。"
+            "template": "提供PRD模板、用户研究方法、需求分析框架和验收标准定义: 请进行完整的完整分析,参考相关示例和最佳实践。",
+            "parameters": {
+                "format": {
+                    "description": "输出格式",
+                    "options": ["detailed", "concise", "executive"],
+                    "default": "detailed"
+                },
+                "include-metrics": {
+                    "description": "是否包含指标",
+                    "type": "boolean",
+                    "default": true
+                },
+                "focus": {
+                    "description": "关注重点",
+                    "options": ["all", "critical", "functional", "non-functional"],
+                    "default": "all"
+                },
+                "lang": {
+                    "description": "输出语言",
+                    "options": ["zh", "en"],
+                    "default": "zh"
+                }
+            }
         },
         {
             "trigger": "/product-requirements-quick",
             "description": "快速检查",
-            "template": "提供PRD模板、用户研究方法、需求分析框架和验收标准定义: 快速快速检查,重点关注关键要素。"
+            "template": "提供PRD模板、用户研究方法、需求分析框架和验收标准定义: 快速快速检查,重点关注关键要素。",
+            "parameters": {
+                "focus": {
+                    "description": "关注重点",
+                    "options": ["all", "critical", "functional", "non-functional"],
+                    "default": "critical"
+                },
+                "lang": {
+                    "description": "输出语言",
+                    "options": ["zh", "en"],
+                    "default": "zh"
+                }
+            }
         }
     ]
 }

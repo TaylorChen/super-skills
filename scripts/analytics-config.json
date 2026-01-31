@@ -1,0 +1,21 @@
+{
+  "data_collection": {
+    "enabled": true,
+    "anonymous": true,
+    "retention_days": 30
+  },
+  "analysis": {
+    "default_days": 7,
+    "max_days": 365,
+    "thresholds": {
+      "low_usage": 3,
+      "low_success_rate": 70,
+      "long_duration": 30
+    }
+  },
+  "reporting": {
+    "format": "markdown",
+    "include_suggestions": true,
+    "top_n": 5
+  }
+}
