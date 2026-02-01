@@ -1,0 +1,49 @@
+{
+  "name": "compress-image",
+  "organization": "super-skills",
+  "version": "5.0.0",
+  "status": "stable",
+  "category": "utilities",
+  "difficulty": "beginner",
+  "estimated_time": "2-5 min",
+  "author": "Contributor",
+  "abstract": "减小图像文件大小同时保持质量",
+  "prompts": [
+    {
+      "trigger": "/compress-image-full",
+      "description": "完整图片压缩",
+      "template": "压缩图片，图片: {image}, 质量: {quality}, 尺寸: {size}",
+      "parameters": {
+        "image": {
+          "description": "图片路径或 URL",
+          "type": "string",
+          "required": true
+        },
+        "quality": {
+          "description": "压缩质量 (0-100)",
+          "type": "number",
+          "default": 80,
+          "min": 1,
+          "max": 100
+        },
+        "size": {
+          "description": "目标尺寸",
+          "type": "string",
+          "default": "1024x768"
+        }
+      }
+    },
+    {
+      "trigger": "/compress-image-quick",
+      "description": "快速图片压缩",
+      "template": "快速压缩图片，图片: {image}",
+      "parameters": {
+        "image": {
+          "description": "图片路径或 URL",
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  ]
+}

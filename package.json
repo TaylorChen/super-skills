@@ -8,10 +8,13 @@
     "claude-code",
     "cursor",
     "copilot",
-    "skills",
     "product",
     "development",
-    "devops"
+    "devops",
+    "content-generation",
+    "image-generation",
+    "social-media",
+    "utilities"
   ],
   "author": "Taylor Chen",
   "license": "MIT",
@@ -36,6 +39,7 @@
     "analytics:export": "python3 scripts/analytics.py --export",
     "stats": "python3 scripts/token-optimizer.py",
     "build-agents": "python3 scripts/build-rules.py",
-    "create-skill": "python3 scripts/create-skill.py"
+    "create-skill": "python3 scripts/create-skill.py",
+    "content-generate": "python3 scripts/content-generator.py"
   }
 }

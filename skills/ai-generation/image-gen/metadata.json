@@ -1,0 +1,47 @@
+{
+  "name": "image-gen",
+  "organization": "super-skills",
+  "version": "5.0.0",
+  "status": "stable",
+  "category": "ai-generation",
+  "difficulty": "intermediate",
+  "estimated_time": "5-10 min",
+  "author": "Contributor",
+  "abstract": "AI 驱动的图像生成，支持多种风格和主题",
+  "prompts": [
+    {
+      "trigger": "/image-gen-full",
+      "description": "完整图像生成",
+      "template": "生成图像，风格: {style}, 尺寸: {size}, 描述: {description}",
+      "parameters": {
+        "style": {
+          "description": "图像风格",
+          "options": ["realistic", "cartoon", "abstract", "vintage", "modern", "minimal", "fantasy", "sci-fi"],
+          "default": "realistic"
+        },
+        "size": {
+          "description": "图像尺寸",
+          "options": ["512x512", "768x768", "1024x1024", "1024x1536", "1536x1024"],
+          "default": "1024x1024"
+        },
+        "description": {
+          "description": "图像描述",
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "trigger": "/image-gen-quick",
+      "description": "快速图像生成",
+      "template": "快速生成图像，描述: {description}",
+      "parameters": {
+        "description": {
+          "description": "图像描述",
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  ]
+}

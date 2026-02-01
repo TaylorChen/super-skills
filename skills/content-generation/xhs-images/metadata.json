@@ -1,0 +1,47 @@
+{
+  "name": "xhs-images",
+  "organization": "super-skills",
+  "version": "5.0.0",
+  "status": "stable",
+  "category": "content-generation",
+  "difficulty": "intermediate",
+  "estimated_time": "5-10 min",
+  "author": "Contributor",
+  "abstract": "生成小红书风格的图片，支持多种风格和布局",
+  "prompts": [
+    {
+      "trigger": "/xhs-images-full",
+      "description": "完整小红书图片生成",
+      "template": "生成小红书风格的图片，风格: {style}, 布局: {layout}, 内容: {content}",
+      "parameters": {
+        "style": {
+          "description": "视觉风格",
+          "options": ["cute", "fresh", "warm", "bold", "minimal", "retro", "pop", "notion", "chalkboard"],
+          "default": "cute"
+        },
+        "layout": {
+          "description": "信息布局",
+          "options": ["sparse", "balanced", "dense", "list", "comparison", "flow"],
+          "default": "balanced"
+        },
+        "content": {
+          "description": "图片内容",
+          "type": "string",
+          "required": true
+        }
+      }
+    },
+    {
+      "trigger": "/xhs-images-quick",
+      "description": "快速小红书图片生成",
+      "template": "快速生成小红书风格的图片，内容: {content}",
+      "parameters": {
+        "content": {
+          "description": "图片内容",
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  ]
+}

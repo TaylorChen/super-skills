@@ -1,0 +1,47 @@
+{
+  "name": "url-to-markdown",
+  "organization": "super-skills",
+  "version": "5.0.0",
+  "status": "stable",
+  "category": "utilities",
+  "difficulty": "beginner",
+  "estimated_time": "2-5 min",
+  "author": "Contributor",
+  "abstract": "将网页内容转换为结构化的 Markdown 格式",
+  "prompts": [
+    {
+      "trigger": "/url-to-markdown-full",
+      "description": "完整 URL 转 Markdown",
+      "template": "将 URL 转换为 Markdown，URL: {url}, 包含图片: {include_images}, 清理格式: {clean_format}",
+      "parameters": {
+        "url": {
+          "description": "网页 URL",
+          "type": "string",
+          "required": true
+        },
+        "include_images": {
+          "description": "是否包含图片",
+          "type": "boolean",
+          "default": true
+        },
+        "clean_format": {
+          "description": "是否清理格式",
+          "type": "boolean",
+          "default": true
+        }
+      }
+    },
+    {
+      "trigger": "/url-to-markdown-quick",
+      "description": "快速 URL 转 Markdown",
+      "template": "将 URL 快速转换为 Markdown，URL: {url}",
+      "parameters": {
+        "url": {
+          "description": "网页 URL",
+          "type": "string",
+          "required": true
+        }
+      }
+    }
+  ]
+}

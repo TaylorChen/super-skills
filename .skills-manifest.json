@@ -23,7 +23,11 @@
     "database",
     "seo",
     "content",
-    "testing"
+    "testing",
+    "content-generation",
+    "image-generation",
+    "social-media",
+    "utilities"
   ],
   "features": [
     "标准化触发指令 (Golden Prompts)",
@@ -33,7 +37,10 @@
     "自动化脚本 (Scripts)",
     "全球化支持 (i18n)",
     "参数化配置支持",
-    "插件市场集成"
+    "插件市场集成",
+    "内容生成和发布能力",
+    "AI 驱动的图像生成",
+    "实用工具集成"
   ],
   "supportedTools": [
     "Claude Code",
@@ -111,6 +118,49 @@
         "monitoring-setup",
         "data-analysis",
         "performance-tuning"
+      ]
+    },
+    {
+      "name": "content-generation",
+      "displayName": "🎨 内容生成",
+      "description": "内容创作、图像处理和社交媒体发布技能",
+      "skills": [
+        "xhs-images",
+        "infographic",
+        "cover-image",
+        "slide-deck",
+        "comic",
+        "article-illustrator",
+        "post-to-x",
+        "post-to-wechat"
+      ]
+    },
+    {
+      "name": "ai-generation",
+      "displayName": "🤖 AI 生成",
+      "description": "AI 驱动的内容生成和信息获取技能",
+      "skills": [
+        "image-gen",
+        "danger-gemini-web"
+      ]
+    },
+    {
+      "name": "utilities",
+      "displayName": "🔧 实用工具",
+      "description": "内容处理和转换的实用工具技能",
+      "skills": [
+        "url-to-markdown",
+        "danger-x-to-markdown",
+        "compress-image",
+        "format-markdown"
+      ]
+    },
+    {
+      "name": "social",
+      "displayName": "💬 社交网络",
+      "description": "AI agents 社交网络和社区参与技能",
+      "skills": [
+        "moltbook"
       ]
     }
   ],
@@ -368,6 +418,67 @@
       "triggers": [
         "/performance-tuning-full",
         "/performance-tuning-quick"
+      ]
+    },
+    {
+      "name": "url-to-markdown",
+      "displayName": "URL 转 Markdown",
+      "description": "将网页内容转换为结构化的 Markdown 格式",
+      "category": "utilities",
+      "difficulty": "beginner",
+      "estimatedTime": "2-5 min",
+      "triggers": [
+        "/url-to-markdown-full",
+        "/url-to-markdown-quick"
+      ]
+    },
+    {
+      "name": "compress-image",
+      "displayName": "图片压缩",
+      "description": "减小图像文件大小同时保持质量",
+      "category": "utilities",
+      "difficulty": "beginner",
+      "estimatedTime": "2-5 min",
+      "triggers": [
+        "/compress-image-full",
+        "/compress-image-quick"
+      ]
+    },
+    {
+      "name": "image-gen",
+      "displayName": "图像生成",
+      "description": "AI 驱动的图像生成，支持多种风格和主题",
+      "category": "ai-generation",
+      "difficulty": "intermediate",
+      "estimatedTime": "5-10 min",
+      "triggers": [
+        "/image-gen-full",
+        "/image-gen-quick"
+      ]
+    },
+    {
+      "name": "xhs-images",
+      "displayName": "小红书图片",
+      "description": "生成小红书风格的图片，支持多种风格和布局",
+      "category": "content-generation",
+      "difficulty": "intermediate",
+      "estimatedTime": "5-10 min",
+      "triggers": [
+        "/xhs-images-full",
+        "/xhs-images-quick"
+      ]
+    },
+    {
+      "name": "moltbook",
+      "displayName": "Moltbook",
+      "description": "AI agents 社交网络，支持发布、评论、点赞和社区创建",
+      "category": "social",
+      "difficulty": "intermediate",
+      "estimatedTime": "5-10 min",
+      "triggers": [
+        "/moltbook-register",
+        "/moltbook-post",
+        "/moltbook-status"
       ]
     }
   ],

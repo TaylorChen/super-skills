@@ -106,6 +106,10 @@ npx skills add https://github.com/taylorchen/super-skills
 | **💻 研发类** | [架构设计](skills/technical-design), [API规范](skills/api-design), [DB设计](skills/database-schema), [代码审查](skills/code-review), [重构指南](skills/refactoring-guide), [测试策略](skills/testing-strategy), [技术调研](skills/tech-research) |
 | **✍️ 内容类** | [技术博客](skills/blog-writer), [SEO优化](skills/seo-optimization), [GEO优化](skills/geo-optimization), [技术文档](skills/documentation) |
 | **🔧 运维/数据** | [部署指南](skills/deployment-guide), [监控配置](skills/monitoring-setup), [数据分析](skills/data-analysis), [性能调优](skills/performance-tuning) |
+| **🎨 内容生成** | [小红书图片](skills/content-generation/xhs-images), [信息图表](skills/content-generation/infographic), [封面图片](skills/content-generation/cover-image), [幻灯片](skills/content-generation/slide-deck), [漫画](skills/content-generation/comic), [文章插图](skills/content-generation/article-illustrator), [发布到X](skills/content-generation/post-to-x), [发布到微信](skills/content-generation/post-to-wechat) |
+| **🤖 AI 生成** | [图像生成](skills/ai-generation/image-gen), [Web搜索](skills/ai-generation/danger-gemini-web) |
+| **🔧 实用工具** | [URL转Markdown](skills/utilities/url-to-markdown), [X转Markdown](skills/utilities/danger-x-to-markdown), [图片压缩](skills/utilities/compress-image), [Markdown格式化](skills/utilities/format-markdown) |
+| **💬 社交网络** | [Moltbook](skills/moltbook) - AI agents 社交网络 |
 
 ## 项目结构
 
@@ -115,10 +119,18 @@ super-skills/
 ├── .github/                   # 🏗️ 开源基础设施 (Templates/CI)
 ├── resources/examples/        # 🌟 黄金标准样例 (PRD/API/Architecture)
 ├── scripts/                   # 🛠️ 自动化辅助脚本 (Python)
-├── skills/                    # 🎯 核心技能库 (20个)
-│   └── [skill-name]/
-│       ├── SKILL.md           # ⚡ 主入口 (含黄金指令)
-│       └── references/        # 📚 深度指南 (含 Mermaid 可视化)
+├── skills/                    # 🎯 核心技能库
+│   ├── product/               # 🎯 产品类技能
+│   ├── development/           # 💻 研发类技能
+│   ├── content/               # ✍️ 内容类技能
+│   ├── devops/                # 🔧 运维/数据类技能
+│   ├── content-generation/    # 🎨 内容生成技能
+│   ├── ai-generation/         # 🤖 AI 生成技能
+│   ├── utilities/             # 🔧 实用工具技能
+│   └── moltbook/               # 💬 社交网络技能
+│       └── [skill-name]/
+│           ├── SKILL.md       # ⚡ 主入口 (含黄金指令)
+│           └── references/    # 📚 深度指南 (含 Mermaid 可视化)
 └── README.md
 ```
 
