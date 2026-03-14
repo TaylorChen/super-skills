@@ -138,6 +138,12 @@ skills/code-review/
     └── maintainability.md
 ```
 
+## OpenClaw
+
+For OpenClaw installation and usage, see:
+
+- docs/openclaw/README.md
+
 ## Project Structure
 
 ```

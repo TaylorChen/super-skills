@@ -42,6 +42,28 @@ def check_skill_structure(skill_path):
     if skill_md_path.exists():
         with open(skill_md_path, 'r', encoding='utf-8') as f:
             content = f.read()
+
+        # 检查 frontmatter 必需字段
+        lines = content.splitlines()
+        has_frontmatter = bool(lines and lines[0].strip() == "---")
+        if not has_frontmatter:
+            errors.append("❌ SKILL.md 缺少 YAML frontmatter (name/description 必填)")
+        else:
+            end_idx = None
+            for i in range(1, len(lines)):
+                if lines[i].strip() == "---":
+                    end_idx = i
+                    break
+            if end_idx is None:
+                errors.append("❌ SKILL.md frontmatter 未闭合")
+            else:
+                fm_lines = lines[1:end_idx]
+                has_name = any(l.strip().startswith("name:") for l in fm_lines)
+                has_desc = any(l.strip().startswith("description:") for l in fm_lines)
+                if not has_name:
+                    errors.append("❌ SKILL.md frontmatter 缺少 name 字段")
+                if not has_desc:
+                    errors.append("❌ SKILL.md frontmatter 缺少 description 字段")
         
         # 检查必要章节
         required_sections = [

@@ -172,6 +172,14 @@ A: [回答 2]
 
 - 主 Skill 文件: ~300 tokens
 - 参考指南总计: ~2k+ tokens
+
+## AI 工具参考
+
+- [Claude 使用指南](../../../CLAUDE.md)
+- [Cursor 使用指南](../../../CURSOR.md)
+- [Trae 使用指南](../../../TRAE.md)
+- [Antigravity 使用指南](../../../ANTIGRAVITY.md)
+- [Codex 使用指南](../../../CODEX.md)
 """
     
     skill_md = skill_path / "SKILL.md"

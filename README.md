@@ -94,6 +94,12 @@ python3 scripts/lint-rules.py
 npx skills add https://github.com/taylorchen/super-skills
 ```
 
+### OpenClaw 安装说明
+
+OpenClaw 用户请参考专用说明文档：
+
+- docs/openclaw/README.md
+
 ### 手动安装与使用
 
 将 skill 文件夹复制到你的 AI 工具目录,然后参考各技能下的 **SKILL.md** 中的“触发指令”进行调用。
